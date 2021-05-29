@@ -1,0 +1,85 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(0, 11, 160);
+}
+
+.row .blogs{
+    box-shadow: 0 0 20px 0px rgba(255,255,255,0.5);
+}
+
+
+#adds {
+    font-size: 18px;
+    color:crimson;
+}
+#adds:hover{
+    color:rgb(255, 0, 51);
+    border-bottom: 2px solid rgb(159, 192, 12);
+}
+
+.add{
+    color: #fff;
+    background-image: url('https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.add input{
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(75, 69, 69);
+}
+
+.add input[placeholder]{
+    color: #fff;
+}
+
+.add input:focus{
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(75, 69, 69);
+}
+
+.add select{
+    float: right;
+    padding: 2px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(75, 69, 69);
+}
+
+.add select:hover{
+    float: right;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(75, 69, 69);
+}
+
+.add select:focus{
+    outline: none;
+}
+
+.add textarea{
+    color: #fff;
+    background-color: rgb(75, 69, 69);
+}
+
+.add textarea:focus{
+    color: #fff;
+    background-color: rgb(75, 69, 69);
+}

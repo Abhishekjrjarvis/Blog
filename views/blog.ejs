@@ -1,0 +1,18 @@
+<% layout('./layouts/boilerplate') %>
+<div class="container-fluid">
+    <h1 class="text-center" style="font-weight:600; color: rgb(99, 0, 25)"><a href="/blog" style="color: rgb(99, 0, 25)">Blog</a></h1>
+    <div class="row blogs mb-5" style="background-color: rgb(66, 65, 65); padding: 30px; border-radius: 20px;" >
+        <div class="col-4" style="border-right: 3px solid rgb(53, 40, 40);">
+            <div class="blog-title mb-5">
+                <ul style="background-color: rgb(99, 0, 25); padding: 20px; border-radius: 10px;">
+                    <h5 class="text-center text-white">Blogs</h5>
+                    <% for(let p of blogs) {%> 
+                        <li style="list-style-type: none;">
+                            <a href="/blog/<%= p._id %> " style="text-decoration: none;"><h6 class="mt-3" style="background-color: aqua; padding: 5px; border-radius: 10px;"><%= p.title %></h6></a>
+                        </li>
+                    <% } %> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> 

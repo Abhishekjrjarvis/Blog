@@ -1,0 +1,24 @@
+<% layout('./layouts/boilerplate') %>
+<div class="container-fluid">
+    <h1 class="text-center" style="font-weight:600; color: rgb(99, 0, 25)"><a href="/blog" style="color: rgb(99, 0, 25)">Blog</a></h1>
+    <!-- <h3 class="text-center mb-3"><span>Good reads beneath!</span></h3> -->
+    <div class="row blogs mb-5" style="background-color: rgb(66, 65, 65); padding: 30px; border-radius: 20px;" >
+        <div class="col-4">
+            <div class="blog-title mb-5">
+                <ul style="background-color: rgb(99, 0, 25); padding: 20px; border-radius: 10px;">
+                    <h5 class="text-center text-white">Blogs</h5>
+                    <% for(let p of blogs) {%> 
+                        <li style="list-style-type: none;">
+                            <a href="/blog/<%= p._id %> "><h6 class="mt-3" style="background-color: aqua; padding: 5px; border-radius: 10px;"><%= p.title %></h6></a>
+                        </li>
+                    <% } %> 
+                </ul>
+            </div>
+        </div>
+        <div class="col-8" style="background-color: rgb(117, 80, 80); padding: 20px; border-radius: 10px; color: #fff;"> 
+            <h5 class="text-center " style="color: rgb(99, 0, 25)">Blog Content</h5>
+            <p><%= view.content %></p>
+            <p><span class="" style="float: right; color: rgb(99, 0, 25); font-weight: 600;">Posted by - <%= view.author.username  %> </span></p> 
+        </div>
+    </div>
+</div>

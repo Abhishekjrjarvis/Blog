@@ -1,0 +1,24 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/homepage" style="color:rgb(99, 0, 25); font-size: 25px; font-weight: 700;">Blogs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" id="adds" href="/blog">All Blogs</a>
+                <a class="nav-link" id="adds" href="/blog/new">Add Blog</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <% if(!currentUser) {%>
+                <a class="nav-link" id="adds" href="/user/login">Login</a>
+                <a class="nav-link" id="adds" href="/user/register">Sign Up</a>
+                <% } else {%>
+                <a class="nav-link" id="adds" href="#">Signed As <%=currentUser.username%></a>
+                <a class="nav-link" id="adds" href="/user/logout">Logout</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</nav>
