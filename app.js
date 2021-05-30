@@ -101,6 +101,4 @@ app.listen(port,(req, res)=>{
 })
 
 
-// DB_URL=mongodb+srv://yelp_camps_blog:QnuMZ63USrEnMSKk@cluster0.3u9ew.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-// PORT=80
-// SECRET=Thisismyblogpage
+
